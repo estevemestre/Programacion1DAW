@@ -1,0 +1,22 @@
+package Examen;
+
+import java.util.Scanner;
+	static boolean validarDNI(String dni){
+		if(dni.lenght != 9){
+			return false;
+		}
+		if(Character.isLetter(dni.charAt(8))){
+			
+		}
+		return true;
+	}
+
+public class Act4 {
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		String dni;
+		System.out.println("Introduce el dni");
+		dni = teclado.nextLine();
+		
+	}
+}

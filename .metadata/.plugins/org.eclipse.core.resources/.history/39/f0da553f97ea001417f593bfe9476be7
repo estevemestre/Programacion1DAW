@@ -1,0 +1,21 @@
+package Protjecte;
+
+public class Productos {
+
+	private int codBarras;
+	private String descripcion;
+	private Double precioSinIva;
+	private double precioConIva;
+	private int candStock;
+	
+	
+	public Producto () {
+		
+		
+		
+		
+	}
+	
+	
+	
+}

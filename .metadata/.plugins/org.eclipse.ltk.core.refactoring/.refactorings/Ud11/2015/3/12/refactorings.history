@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;lloc&apos; in &apos;Teatre.Zona.Zona(...)&apos; to &apos;numEntrades&apos;&#x0D;&#x0A;- Original project: &apos;Ud11&apos;&#x0D;&#x0A;- Original element: &apos;Teatre.Zona.Zona(String, int, double, double).lloc&apos;&#x0D;&#x0A;- Renamed element: &apos;lloc&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;lloc&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;Teatre{Zona.java[Zona~Zona~QString;~I~D~D@lloc!201!208!205!208!I!0!true" name="numEntrades" references="true" stamp="1426591483172" version="1.0"/>
+</session>

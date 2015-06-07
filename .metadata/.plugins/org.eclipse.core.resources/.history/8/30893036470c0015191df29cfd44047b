@@ -1,0 +1,12 @@
+package Teatre;
+
+public class Reducida extends Normal {
+
+	
+	public Reduciada (Zona zona) {
+		
+		
+		
+		
+	}
+}

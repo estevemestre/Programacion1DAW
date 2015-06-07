@@ -1,0 +1,23 @@
+package Teatre;
+
+public class Reducida extends Normal {
+
+	
+	public Reduciada (Zona zona) {
+		
+		super(zona);
+		
+		
+		
+	}
+	
+	
+	
+	
+	public double calcularPreu () {
+		
+		
+		
+		return 5;
+	}
+}

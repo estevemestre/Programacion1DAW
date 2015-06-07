@@ -1,0 +1,25 @@
+package Teatre;
+
+public class Zona {
+
+	private String nom;
+	private int numLocalitats;
+	private double preuNormal;
+	private double preuAbonat;
+	
+	
+	
+	public Zona (String nom, int localitats, double preuNormal, double preuAbonats) {
+		
+		this.nom = nom;
+		this.numLocalitats = localitats;
+		this.preuNormal = preuNormal;
+		this.preuAbonat = preuAbonats;
+		
+		
+		
+		
+		
+		
+	}
+}

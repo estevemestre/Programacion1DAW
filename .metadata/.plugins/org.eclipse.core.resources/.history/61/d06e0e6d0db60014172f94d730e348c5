@@ -1,0 +1,10 @@
+package Examen;
+
+public class Act2 {
+	static int [] llenar (int [] array){
+		for (int i = 0; i < array.length; i++) {
+			array[i] = (int)(Math.random()*41);
+		}
+		return array;
+	}
+}

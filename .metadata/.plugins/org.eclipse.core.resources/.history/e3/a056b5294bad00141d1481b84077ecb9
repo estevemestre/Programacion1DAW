@@ -1,0 +1,16 @@
+/*
+ * Especialitats = (Máxim 3 ) codi(1,2,3,4,5) nom // Objecte tipo Array Especialitat
+ * 
+ */
+package Clinica;
+public class Especialitat {
+	private static int codiTotal =1;
+	private  int codi;
+	
+	public Especialitat () {
+	codiTotal = codiTotal +1;
+	codi = codiTotal +1;
+	
+	
+	}
+}

@@ -1,0 +1,48 @@
+/*@author Esteve Mestre Company
+ * Activitat2.- Escriu un mètode que, donat un String, retorne un altre objecte String en el 
+ * qual es canvien totes les vocals minúscules de l'original per la lletra 'a'.
+ *  Escriu un programa que permeta comprovar el funcionament.
+ */
+package com.prog.ud8;
+import java.util.Scanner;
+public class Activitat2 {
+
+	
+	public static void main(String[] args) {
+		String frase;
+		Scanner teclat=new Scanner(System.in);
+		
+		System.out.println("Inserta una frase: ");
+		frase=teclat.nextLine();
+		
+		System.out.println(canviaVocals(frase));
+	}
+
+	//mètode que, donat un String, canvien totes les vocals minúscules de l'original per la lletra 'a'.
+	
+	public static String canviaVocals(String frase){
+		int i;
+		int j;
+		char [] vocals={'a','à','á','e','è','é','i','í','o','ò','ó','u','ú'};
+		
+		i=0;
+		j=0;
+		while (i< frase.length()){//recorre les lletres del string
+			while(j< vocals.length){	//recorre els elements de l'array
+				if(frase.charAt(i)==vocals[j]){
+					frase=frase.replace(frase.charAt(i), 'a'); //reemplaça la vocal per la 'a' i ho guarda a la variable.
+				}
+				j=j+1;
+			}
+			j=0;
+			i=i+1;
+		}
+			
+		return frase;
+	}
+
+
+
+
+}
+

@@ -1,0 +1,46 @@
+/*
+ *  3.- Desenvolupar una classe anomenada Professor que:
+ *	Tinga un mètode posarNotes() que reba un paràmetre de tipus Alumne i que no retorne res. Posarà una qualificació aleatòria a cada una de les assignatures de l'alumne.
+ * 
+ */
+
+
+
+
+package Practica2;
+
+public class Professor {
+	
+	
+	
+	
+	private Alumne a;
+	private Alumne b;
+	private Alumne c;
+		
+	
+	
+	
+	public Professor (double a, double b, double c) {
+		
+		this.a = new 
+		
+		
+	}
+	
+	
+	// Tinga un mètode posarNotes() que reba un paràmetre de tipus Alumne i que no retorne res. 
+	
+	public void posarNotes(Alumne tipoAlumne) {
+		
+		
+		
+		// Posarà una qualificació aleatòria a cada una de les assignatures de l'alumne.
+		
+		
+		
+		
+		
+	}
+
+}

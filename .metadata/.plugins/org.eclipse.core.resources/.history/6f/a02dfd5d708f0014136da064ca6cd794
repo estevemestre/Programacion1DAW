@@ -1,0 +1,126 @@
+/*
+ *  3.- Desenvolupar una classe anomenada Professor que:
+ *	Tinga un mètode posarNotes() que reba un paràmetre de tipus Alumne i que no retorne res. Posarà una qualificació aleatòria a cada una de les assignatures de l'alumne.
+ * 
+ */
+
+
+
+
+package Practica2;
+import java.util.Scanner;
+public class Professor {
+	
+	Scanner teclado = new Scanner(System.in);
+
+//-----------------------------VARIABLES INSTANCIA-----------------------------------------------
+	
+		private  String nomComplet;
+		
+		private String email;
+		
+		
+//----------------------------CONSTRUCTORES-------------------------
+		
+		
+		public Professor () {
+			
+			String nom;
+			String email;
+			
+				System.out.println("Inserta tu nombre");
+				nom = teclado.nextLine();
+				
+				System.out.println("inserta el teu email");
+				email = teclado.nextLine();
+				
+				
+				nom = this.nomComplet;
+			
+				email = this.email; 
+			
+		}
+		
+		
+		
+		public Professor (String nomComplet, String email) {
+			
+			
+			this.nomComplet = nomComplet;
+			
+			this.email = email;
+	
+		}
+	
+//-------------------------GETTERS Y SETTERS-----------------------------------------------
+		
+
+		public String getNomComplet() {
+			return nomComplet;
+		}
+
+
+
+		public void setNomComplet(String nomComplet) {
+			this.nomComplet = nomComplet;
+		}
+
+
+
+		public String getEmail() {
+			return email;
+		}
+
+
+
+		public void setEmail(String email) {
+			this.email = email;
+		}
+
+		
+		
+		
+		
+		
+		
+	
+		
+//------------------------------METODES ------------------------------------------------------------
+	
+	public void posarNotes(Alumne alumno) {
+
+		alumno.getA().setQualificacio(Math.random()*11);
+		System.out.println(	alumno.getA().getQualificacio());
+		
+		alumno.getB().setQualificacio(Math.random()*11);
+		System.out.println(	alumno.getB().getQualificacio());
+		
+		alumno.getC().setQualificacio(Math.random()*11);
+		System.out.println(	alumno.getC().getQualificacio());
+	}
+
+	public void insertarNotes(Alumne alumno) {
+
+		double insertNot;
+		
+		System.out.println(alumno.getNomCognoms());
+		System.out.println("************************");
+		System.out.println(alumno.getA().getNom());
+		System.out.println("Introdueix la nota que vuigues posar");
+		insertNot=Double.parseDouble(teclado.nextLine());
+		
+		alumno.getA().setQualificacio(insertNot);
+		
+		
+
+		
+		
+		
+		
+		
+		
+	}
+
+
+	
+}

@@ -1,0 +1,17 @@
+package Teatre;
+
+public class Normal extends Entrada {
+
+	
+	
+	
+	
+	
+	
+	
+	
+	public void calcularPreu()	{
+		
+		
+	}
+}

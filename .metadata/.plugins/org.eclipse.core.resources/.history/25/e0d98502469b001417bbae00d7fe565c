@@ -1,0 +1,47 @@
+/*@uthor Esteve Mestre Company
+ * 
+ * 		XICOTETA CLINICA
+
+Metges = tindran nº colegiat, nom
+Especialitats = (Máxim 3 ) codi(1,2,3,4,5) nom // Objecte tipo Array Especialitat
+Pacient = DNI, nom, telefon, visites(data,hora) maxim 10
+Visita = Metge, data visita , hora vista (Máxim 10 )
+
+
+//Cuant creem el metge estara buit  "array especialitat"
+
+** Crearem un menú
+
+1_Alta especialitat 
+2_Alta metges 
+3_Alta pacients
+4_Afegir especialitat
+
+Li demanara el codi especialitat i mirara que estiga en alta especialitat si en alta especialitat, mirara 
+que estiga en el metge i si no esta el afegira (si el codi especialitat no esta donat de alta li dira que 
+hagut un error o que torne a possar la especialitat  
+
+5_Visita pacient
+Demanarem el nºcolegiat // la fecha
+
+ * 
+ * 
+ * 
+ */
+package Clinica;
+
+public class ClinicaMain {
+
+	public static void main(String[] args) {
+		
+		
+		
+		Metges[] arrayMedico = new Metges[10];
+
+		Metges objecteMetge = new Metges();
+		
+		
+		arrayMedico [0] = objecteMetge;
+		
+	}
+}

@@ -1,0 +1,61 @@
+/*
+ * @author Esteve Mestre Company
+ * 
+ * Volem comptar, a partir d'una frase introduïda per teclat, 
+ * els caràcters en blanc i els caràcters especials. 
+ *Concretament, els caràcters especials que volem comptabilitzar 
+ *(tots junts, no cada tipus per separat) són:
+ *! “  #  $  %  &  '  (  )  *  +  ,  -  .  / : ; - = > ? @ [ \  ] ^ _  
+ *{ | }
+ *Una de les formes de treballar amb caràcters és fer la comparació 
+ *directament amb el caràcter en qüestió que, com ja sabeu, ha d'anar
+ *entre cometes simples. Però també es pot passar el codi del caràcte
+ *r en notació hexadecimal (recorda que cada caràcter es guarda en Java 
+ *en format UNICODE). En la següent adreça web, que no és la única 
+ *(http://www.utf8-chartable.de/) està la codificació en UNICODE
+ *i en UTF-8 dels caràcters. Els caràcters especials que et demane 
+ *estan junts en 3 grups. Pots emprar els intervals dels seus codis
+ *UNICODE per evitar haver de comparar cada caràcter per separat.
+ *En els apunts de la unitat 3 tens com es passa el codi d'un caràcter
+ *en hexadecimal.
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+package com.prog.ud6;
+import java.util.Scanner;
+public class Actividad13 {
+	
+public static void main(String[] args){
+		
+		specialCaract();
+		
+	}
+	
+	public static void specialCaract(){
+		Scanner teclat = new Scanner(System.in);
+		String frase;
+		int cont=0;
+		
+		System.out.println("Escribe una frase");
+		frase = teclat.nextLine();
+		
+		for (int i=0;i<frase.length();i++){
+			char carac=frase.charAt(i);
+			if (carac>='\u0021' && carac<='\u002F' || carac>='\u003A' && carac<='\u0040' ||
+				carac>='\u005B' && carac<='\u005F' || carac>='\u007B' && carac<='\u007D' ||
+				carac==' '){
+				cont++;
+			}
+		}
+		
+		System.out.println("Hay "+cont+" carácteres especiales.");
+		teclat.close();
+	}
+
+
+	
+}

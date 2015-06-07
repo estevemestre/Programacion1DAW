@@ -1,0 +1,43 @@
+/*Activitat12.- Implementa els següents mètodes:
+•	public static int[] omplirArray(): ompli un array de 50 elements numèrics 
+amb números aleatoris entre 0 i 30.
+•	public static int buscarZero(int[] vector): ha de buscar la posició del primer element
+ amb contingut 0. Si no n'hi ha cap element amb contingut 0, ho indicarà.
+Prova el funcionament del programa des del main().
+ */
+package Activitat_11_15;
+
+import java.util.Arrays;
+
+public class Activitat12 {
+	static int [] Array = new int [50];
+	
+	public static int[] omplirArray(){
+		for (int i = 0; i < Array.length; i++) {
+			Array[i]=(int)(Math.random()*(30-0+1)+0);
+		}
+		return Array;
+	}
+	
+	public static int buscarZero(int[] vector){
+		for (int i = 0; i < vector.length; i++) {
+			if(vector[i]==0){
+				return i;
+			}
+		}
+		System.out.println("No hi ha cap 0 en l'array.");
+		return -1;
+	}
+
+	public static void main(String[] args) {
+		omplirArray();
+		if(buscarZero(Array)!= -1){
+			System.out.println("El número 0 està en la posició "+buscarZero(Array)+ " del array.");
+		}
+		System.out.println(Arrays.toString(Array));
+	}
+}
+
+	
+	
+

@@ -1,0 +1,19 @@
+package Teatre;
+
+public class Reducida extends Entrada {
+
+	
+	public Reducida (Zona zona) {
+		
+		super(zona);
+		
+		
+		
+		
+	}
+
+	public double calcularPreu() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}

@@ -1,0 +1,38 @@
+package classObject;
+
+import java.util.Scanner;
+
+public class Fecha { 
+
+	private int dia;
+	private int mes;
+	private int any;
+	
+	
+	public Fecha (int dia, int mes, int any) {
+	
+		Scanner lector = new Scanner(System.in);
+	
+		this.dia = dia;
+		this.mes = mes;
+		this.any = any;
+
+	
+		
+	}
+	
+	@Override
+	public String toString() {
+		return "Fecha";
+	}
+
+	public static void main(String[] args) {
+		
+		Fecha fecha = new Fecha(4,7,993);
+		
+		
+		System.out.println(fecha);
+	}
+}
+
+

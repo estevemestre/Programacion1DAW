@@ -1,0 +1,45 @@
+/*
+ * @author Esteve Mestre Company
+ */
+package com.prog.ud8;
+import java.util.Scanner;
+public class Activitat1 {
+
+	public static void main(String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		String nom;
+		String primerCognom;
+		String segonCognom;
+		String nomComplet;
+	
+		
+		System.out.println("Inserta el teu nom: ");
+		nom = teclado.nextLine();
+		
+		System.out.println("Inserta el teu primer cognom: ");
+		primerCognom = teclado.nextLine();
+		
+		System.out.println("Inserta el teu segon cognom: ");
+		segonCognom = teclado.nextLine();
+		
+		// nomComplet = Guardara 3 variables en una.
+		nomComplet = nom.concat( " " + primerCognom.concat(" " +segonCognom));
+		System.out.println(nomComplet +" té " +nomComplet.length() + "caracteres");
+		
+		
+		
+		
+		System.out.println("El teu nom en minúcules "+nomComplet.toLowerCase());
+		System.out.println("El teu nom en mayúcules "+nomComplet.toUpperCase());
+	
+		
+	
+
+			if (nom.length() >= 2) {
+				System.out.println("Els 2 primers caracters son : "+nom.substring(0, 2));
+				System.out.println(nom.substring(nom.length()-2, nom.length()));  //mostra els 2 últims caràcters
+			}
+	}
+}

@@ -1,0 +1,21 @@
+package classObject;
+
+import java.util.Scanner;
+
+public class Fecha { 
+
+	private int dia;
+	private int mes;
+	private int any;
+	
+	
+	public Fecha () {
+	
+		Scanner lector = new Scanner(System.in);
+		System.out.println();
+	}
+
+
+}
+
+

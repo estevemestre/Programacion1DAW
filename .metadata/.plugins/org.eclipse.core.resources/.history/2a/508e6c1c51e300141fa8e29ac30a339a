@@ -1,0 +1,11 @@
+package Teatres;
+
+public class Abonado extends Entrada {
+	
+	public Abonado (Zona zona) {
+		this.zona = zona;
+	}
+	public double calcularPrecio () {
+		return zona.getPrecioAbonado();
+	}
+}

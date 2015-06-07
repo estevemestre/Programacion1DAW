@@ -1,0 +1,52 @@
+
+/* Buscar en un aray
+ * 
+ * Array no ordenats
+ * 
+ * 			numerobuscar = 5 = 2
+ * 			numerobuscar = 6 = -1 // no existeis 
+ * 
+ * Array  ordenat 
+ * 
+ * si el array no esta ordenat el millor cas seria  serria que el cas 0 fora el  numero que buscaba
+ * y e pijor cas esque  tinguera que buscarlo i estaguera en la ultima casilla
+ * 
+ * 
+ */
+package actividad1;
+
+public class Actividad6 {
+
+	public static void main(String[] args) {
+		
+	
+		int [] numeros= new int[4];
+		
+		numeros[0]=5;
+		numeros[1]=6;
+		numeros[2]=9;
+		numeros[3]=2;
+		
+	}
+	
+	
+	
+	static int  buscarNoORdenat (int [] numeros) {
+		
+		
+		for (int i = 0; i < numeros.length; i++) {
+			
+			if(numeros[i] == 2) {
+				
+			}
+		}
+		
+		
+		
+		return numeros;
+	}
+		
+
+		
+		
+}

@@ -1,0 +1,80 @@
+package Teatre;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class GestioTeatre {
+
+	static Scanner reader = new Scanner(System.in);
+	static ArrayList<Zona> zones = new ArrayList<Zona>();
+	
+	
+	
+	public static void main(String[] args) {
+		menuPrincipal();
+	}
+	
+	
+	public static Zona buscarZona() {
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	public static void menuPrincipal() {
+		
+		
+		// guarde tot els objectes  de tipo zona
+		
+		zones.clear();
+		zones.add(new Zona("Pricipal",200, 25, 17.5));
+		zones.add(new Zona("Palco",40, 70, 40));
+		zones.add(new Zona("Central",400, 20, 14));
+		zones.add(new Zona("Lateral",100, 15.5, 10));
+
+		
+		
+		
+		
+		
+		
+		
+		int option;
+		
+		do {
+			System.out.println("GESTIÓN TEATRO");
+			System.out.println("==============");
+			System.out.println("1.-Vender entrada.");
+			System.out.println("2.-Consultar entrada.");
+			System.out.println("3.-Informe zona.");
+			System.out.println("0.-Salir de la aplicación.");
+			System.out.print("Inserte una opción válida: ");
+			option=Integer.parseInt(reader.nextLine());
+			
+			switch (option ){
+			case 1:
+				
+				
+				
+				
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			case 0:
+				System.out.println("Aplicación finalizada.");
+				break;
+			default:
+				System.out.println("Opción no válida.");
+				break;
+					
+			}
+		} while (option != 0);
+	}
+}

@@ -1,0 +1,14 @@
+package Teatre;
+
+public class Reducida extends Entrada {
+
+	
+	public Reducida (Zona zona) {
+		
+		
+		
+		
+		
+		
+	}
+}

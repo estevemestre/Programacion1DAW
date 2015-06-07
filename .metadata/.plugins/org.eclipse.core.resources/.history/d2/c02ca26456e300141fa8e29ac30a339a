@@ -1,0 +1,28 @@
+package Teatres;
+
+import java.util.Scanner;
+
+public abstract class Entrada {
+	
+	static Scanner reader = new Scanner (System.in);
+	 protected static int idTotal; 
+	
+	
+	protected Zona zona;
+	protected int id;
+	protected String nombre;
+
+
+	public Entrada () {
+		
+		System.out.println("Introduce el nombre del espectador: ");
+		this.nombre = reader.nextLine();
+		this.id = this.idTotal +1;
+		this.idTotal =  this.idTotal +1;
+		
+
+	}
+	
+	
+	public abstract double calcularPrecio ();
+}

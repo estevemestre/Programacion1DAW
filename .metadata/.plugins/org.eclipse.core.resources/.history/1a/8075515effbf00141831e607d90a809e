@@ -1,0 +1,18 @@
+package classObject;
+
+public class Fecha { 
+
+	private int dia;
+	private int mes;
+	private int any;
+	
+	
+
+	public String toString() {
+		return "Fecha [dia=" + dia + ", mes=" + mes + ", any=" + any + "]";
+	}
+
+
+}
+
+

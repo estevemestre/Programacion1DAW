@@ -1,0 +1,14 @@
+package Teatre;
+
+public class Abonado extends Entrada{
+
+	public Abonado(Zona zona) {
+		super(zona);
+	}
+
+	public void calcularPreu() {
+		this.preuEntrada = this.zona.getPreuAbonat();
+	}
+
+	
+}

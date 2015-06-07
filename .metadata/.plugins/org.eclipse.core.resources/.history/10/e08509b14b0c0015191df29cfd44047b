@@ -1,0 +1,44 @@
+package Teatre;
+
+import java.util.Scanner;
+
+public class GestioTeatre {
+
+	Scanner reader = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	
+	public static void menuPrincipal() {
+		int option;
+		
+		do {
+			System.out.println("GESTIÓN TEATRO");
+			System.out.println("==============");
+			System.out.println("1.-Vender entrada.");
+			System.out.println("2.-Consultar entrada.");
+			System.out.println("3.-Informe zona.");
+			System.out.println("0.-Salir de la aplicación.");
+			System.out.print("Inserte una opción válida: ");
+			option=Integer.parseInt(reader.nextLine());
+			
+			switch (option ){
+			case 1:
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			case 0:
+				System.out.println("Aplicación finalizada.");
+				break;
+			default:
+				System.out.println("Opción no válida.");
+				break;
+					
+			}
+		} while (option != 0);
+	}
+}

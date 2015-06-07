@@ -1,0 +1,36 @@
+package Teatre;
+
+import java.util.Scanner;
+
+public abstract class Entrada {
+
+	protected static Scanner reader = new Scanner(System.in);
+
+	
+	
+	
+	protected int id;
+	protected Zona zona;
+	protected String nombre;
+	
+	
+
+	
+	
+	public Entrada (Zona zona) {
+		
+		System.out.println("Introdueix el nom del espectador");
+		this.nombre = reader.nextLine();
+		
+		
+		this.zona = zona;
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+}

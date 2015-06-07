@@ -1,0 +1,7 @@
+package Examen;
+
+public class Ac1 {
+	static int[] metodo1 (int [] array){
+		
+	}
+}

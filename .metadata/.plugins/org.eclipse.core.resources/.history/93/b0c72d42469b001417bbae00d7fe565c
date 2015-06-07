@@ -1,0 +1,33 @@
+/*
+ * Metges = tindran nº colegiat, nom
+ */
+package Clinica;
+
+import java.util.Scanner;
+
+public class Metges {
+
+	Scanner scanner = new Scanner(System.in);
+
+	
+	private int numColegiat;
+	private String nom;
+	
+
+	// Metges  [] medico = new Metges [10];
+	
+	public Metges () {
+		
+		
+		
+		System.out.println("Inserta un número de colegiat per al metge");
+		this.numColegiat = scanner.nextInt();
+		
+		System.out.println("Inserta un nom per al metge ");
+		this.nom =  scanner.nextLine();
+
+	}
+	
+	
+	
+}

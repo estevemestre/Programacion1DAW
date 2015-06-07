@@ -1,0 +1,38 @@
+/*Activitat13.- Escriu un programa que permeta introduir un array de 20 elements entre
+ *  0 i 100 i visualitzar-lo. Després, ha d'indicar posició i contingut de tots aquells 
+ *  elements amb contingut major que 10. Indicar quants elements n'hi ha que complixen esta
+ *   condició. Seguix les orientacions de les activitats anteriors per crear els mètodes.
+ */
+package Activitat_11_15;
+
+import java.util.Arrays;
+
+public class Activitat13 {
+	public static int[] omplirArray(int[] array){
+		for (int i = 0; i < array.length; i++) {
+			array[i]=(int)(Math.random()*(100-0+1)+0);
+		}
+		return array;
+	}
+
+	public static void majorQue10(int [] array){
+		int suma=0;
+		System.out.println("Els elements major que 10 son:");
+		for (int i = 0; i < array.length; i++) {
+			if(array[i]>10){
+				System.out.println(array[i]+" que ocupa la posició "+i+ " del array");
+				suma=suma+1;
+			}
+		}
+		System.out.println("Hi ha "+suma+ "posicions en que el seu contingut és major que 10.");
+	}
+	
+	public static void main(String[] args) {
+		int [] array = new int [20];
+		
+		omplirArray(array);
+		System.out.println(Arrays.toString(array));
+		majorQue10(array);
+	}
+}
+

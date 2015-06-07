@@ -1,0 +1,61 @@
+/*
+ * @author Esteve Mestre 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+package com.prog.ud6;
+import java.util.Scanner;
+public class Actividad11 {
+
+	public static void main(String[] args){
+		
+		String DNI = obtindreDNI();
+		//System.out.println(DNI);	//Ho he utilitzat per comprovar que funciona obtindreDNI()
+		
+		String NIF = calcularNIF(DNI);
+		System.out.println("\nEl seu NIF és: "+NIF);
+	}
+
+	public static String obtindreDNI (){
+		Scanner teclat = new Scanner(System.in);
+		String DNI="";
+		
+		while(DNI.length()<8){
+			System.out.print("Introduïsca el seu DNI (8 números): ");
+			DNI = teclat.nextLine();
+		}
+		
+		teclat.close();
+		return DNI;		
+	}	//obtindreDNI()
+	
+	public static String calcularNIF(String DNI){
+		String NIF="";
+		int intDNI;
+		int calcLletra;
+		String stringLletra="TRWAGMYFPDXBNJZSQVHLCKE";
+		char charLletra='a';
+		
+		intDNI = Integer.parseInt(DNI);
+		calcLletra = intDNI%23;
+		
+		if (calcLletra!=23) {
+			charLletra = stringLletra.charAt(calcLletra);
+		}
+		NIF=DNI+"-"+charLletra;
+		return NIF;
+	}	//calcularNIF()	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,92 @@
+/*
+ *	2.- Desenvolupar una classe anomenada Alumne que:
+ *	Tinga tres atributs de tipus Assignatura.
+ *	Tinga un constructor amb tres paràmetres de tipus Assignatura que inicialitze els tres atributs.
+ *	Tinga un constructor amb tres paràmetres de tipus int que inicialitze les tres variables d'instància.
+ *	Tinga un getter i un setter per a cada atribut.
+ *	Tinga un mètode calcularMitjana() que reba un paràmetre de tipus Alumne i retorne un double.
+ */
+
+package Practica2;
+
+          // Desenvolupar una classe anomenada Alumne que:
+public class Alumne {
+
+	
+	// Tinga tres atributs de tipus Assignatura. 
+	
+	// ********  Aço vol dir que  la variable de instancia de tipo asignatura   tindra un indentificador i una qualificacio ???????????????????????????
+	
+	private Assignatura a;
+	private Assignatura b;
+	private Assignatura c;
+	
+	
+
+	
+
+	
+	
+	//  *	Tinga un constructor amb tres paràmetres de tipus Assignatura que inicialitze els tres atributs.
+	
+	
+	
+	
+	
+	public Alumne (Assignatura a, Assignatura b, Assignatura c)  {
+		
+		this.a = a;
+		this.b = b;
+		this.c = c;
+	}
+	
+	// Tinga un constructor amb tres paràmetres de tipus int que inicialitze les tres variables d'instància.
+	
+	
+	
+	public Alumne(int indentificador1, int indentificador2, int indentificador3) {
+		
+		// **** Estic creant un objecte ?????????? 
+		// a la aasignarem el indentificador per que el indentficador es de tipo int i  la qualificacio no li asignarem perque es de tipo double 
+		
+		this.a = new Assignatura(indentificador1);
+		this.b = new Assignatura(indentificador2);
+		this.c = new Assignatura(indentificador3);
+	}
+	
+	
+		public Alumne(double qualificacio1, double qualificacio2, double qualificacio3) {
+		
+	 
+		// a la aasignarem el indentificador per que el indentficador es de tipo int i  la qualificacio no li asignarem perque es de tipo double 
+		
+		this.a = new Assignatura(qualificacio1);
+		this.b = new Assignatura(qualificacio2);
+		this.c = new Assignatura(qualificacio3);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 // 	Tinga un mètode calcularMitjana() que reba un paràmetre de tipus Alumne i retorne un double.
+	
+	//***************************
+		public double calcularMitjana (Alumne tipoAlumne) {
+			
+			//double a, b,  c;
+			
+			double mitjana = 0 ;
+		
+				// mitjana =  (this.a + this.b + this.c ) / 3;
+			
+			
+			return mitjana;
+			
+		}
+}

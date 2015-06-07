@@ -1,0 +1,25 @@
+//Pacient = DNI, nom, telefon, visites(data,hora) maxim 10
+	
+package Clinica;
+
+import java.util.Scanner;
+
+public class Pacient {
+	private String nom;
+	private int dni;
+	private int telefon;
+	private int [] visita;
+	
+	Scanner teclado = new Scanner (System.in);
+	
+	public Pacient () {
+	System.out.println("Introdueix el teu nom");
+	nom= teclado.nextLine();
+	System.out.println("Introduix el Dni");
+	dni = Integer.parseInt(teclado.nextLine());
+	System.out.println("");
+
+	
+		
+	}
+}

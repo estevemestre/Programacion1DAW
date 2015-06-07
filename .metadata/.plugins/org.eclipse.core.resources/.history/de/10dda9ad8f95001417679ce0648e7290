@@ -1,0 +1,5 @@
+package Resum;
+
+import org.omg.Messaging.SyncScopeHelper;
+
+public class Variables {

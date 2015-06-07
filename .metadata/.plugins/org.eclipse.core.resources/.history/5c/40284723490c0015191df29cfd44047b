@@ -1,0 +1,23 @@
+package Teatre;
+
+public class Normal extends Entrada {
+
+	
+	
+	
+	public Normal (Zona zona) {
+		super(zona);
+
+		calcularPreu();
+		
+		
+	}
+
+	
+	
+	public void calcularPreu()	{
+		double preu;
+		this.preuEntrada = zona.getPreuNormal();
+		
+	}
+}

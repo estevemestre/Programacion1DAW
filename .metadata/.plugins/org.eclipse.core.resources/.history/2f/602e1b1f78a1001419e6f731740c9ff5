@@ -1,0 +1,80 @@
+package Activitat_11_16;
+import java.util.Scanner;
+public class lol {
+	
+	//ompli un array de 10 elements amb números aleatoris del 0 al 50.
+	public static int[] crearArray(){
+		int [] numeros= new int [10];
+		
+		for (int i=0; i<numeros.length;i++){
+			numeros[i]= (int)(Math.random()*50+0);
+		}
+		return numeros;
+	}
+	
+	//visualitza tot el contingut del array.
+	public static void visualitzarArray(int[] vector){
+		for(int i=0;i<vector.length;i++){
+			System.out.print(vector[i]+" ");
+		}
+	}
+	
+	//mostra la posició i contingut dels elements que ocupen posició par.
+	public static void mostrarPosPars(int[] vector){
+		for(int i=0;i<vector.length;i++){
+			if(i%2==0){
+				System.out.println("Posició: "+i+" Contingut: "+vector[i]);
+			}
+		}
+	}
+	
+	//mostra la posició i contingut dels elements que ocupen posició múltiple de 3.
+	public static void mostrarPosMultiples3(int[] vector){
+		for(int i=0;i<vector.length;i++){
+			if(i%3==0){
+				System.out.println("Posició: "+i+" Contingut: "+vector[i]);
+			}
+		}
+	}
+	
+	//Programa principal (main)
+	
+	public static void main(String[] args) {
+		int opcio;
+		int [] vector=null; // s'ha d'inicialitzar a null perquè sinó no van els mètodes del switch
+		Scanner teclat = new Scanner (System.in);
+		
+		do{
+		System.out.println("\nMENÚ PRINCIPAL \n "
+				+ "============== \n"
+				+ "1.-Crear array.\n"
+				+ "2.-Visualitzar contingut de l ' array \n"
+				+ "3.-Visualitzar contingut de les posicions pars. \n"
+				+ "4.-Visualitzar contingut de les posicions múltiple de 3. \n"
+				+ "0.-Eixir del menú. \n"
+				+ "Selecciona una opció:");
+		opcio=Integer.parseInt(teclat.nextLine());
+		
+		switch (opcio){
+		case 1:
+			vector=crearArray();
+			break;
+		case 2:
+			visualitzarArray(vector);
+			break;
+		case 3:
+			mostrarPosPars(vector);
+			break;
+		case 4:
+			mostrarPosMultiples3(vector);
+			break;
+		case 0:
+			System.out.println("Ha eixit de l'aplicació amb èxit.");
+		}
+		} while (opcio!=0);	
+		
+	}
+
+}
+
+

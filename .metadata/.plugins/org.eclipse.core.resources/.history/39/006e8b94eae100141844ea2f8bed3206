@@ -1,0 +1,75 @@
+package Teatres;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import Marian_teatre.Entrada;
+import Marian_teatre.Zona;
+
+public class Teatre  {
+
+	static Scanner reader = new Scanner (System.in);
+	static ArrayList<Entrada> entradas = new ArrayList<Entrada>();
+	static ArrayList<Zona> zones  = new ArrayList<Zona>();
+	
+	
+	// Buscar tipo zona
+	public static Zona tipoZona() {
+		String tipo;
+		System.out.println("Introduce un tipo de zona (Principal, Palco, Central o Lateral)");
+		tipo = reader.nextLine();
+		
+		for (int i = 0; i < zones.size(); i++) {
+	
+			if (zones.get(i).getNombre().equalsIgnoreCase(tipo)) {
+				return zones.get(i);
+		}else {
+			System.out.println("no s'ha trobat la zona buscada");
+		}
+		
+		
+		return null;
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		
+		zones.add(new Zona("Principal",200,25,17.5));
+		zones.add(new Zona("Palco",40,70,40));
+		zones.add(new Zona("Central",400,20,14));
+		zones.add(new Zona("Lateral",100,15.5,10));
+
+		int menu;
+		do {
+		System.out.println("GESTIÓN TEATRO");
+		System.out.println("==============");
+		System.out.println("1.-Vender entrada.");
+		System.out.println("2.-Consultar entrada.");
+		System.out.println("3.-Informe zona.");
+		System.out.println("0.-Salir de la aplicación.");
+		System.out.print("Inserte una opción válida: ");
+		menu = Integer.parseInt(reader.nextLine());
+		
+		switch (menu) {
+		
+			case 1:  // Vender entradas 
+					
+			break;
+			
+			case 2: // Consultar entrada
+			
+			break;
+			
+			case 3: // Informe de la zona 
+			
+			break;
+		default:
+			break;
+		}
+		
+		
+		}while (menu != 0);
+	}
+}
+     

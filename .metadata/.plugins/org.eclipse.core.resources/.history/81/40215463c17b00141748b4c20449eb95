@@ -1,0 +1,58 @@
+/*
+ * @author Esteve Mestre Company
+ * 
+ *  1- Desenvolupar una classe anomenada Assignatura que:
+ *	Tinga dos atributs. Un de tipus int (l'identificador) l'altre de tipus double (la qualificació).
+ *	Tinga getters i setters per a les variables d'instància.
+
+ *	2.- Desenvolupar una classe anomenada Alumne que:
+ *	Tinga tres atributs de tipus Assignatura.
+ *	Tinga un constructor amb tres paràmetres de tipus Assignatura que inicialitze els tres atributs.
+ *	Tinga un constructor amb tres paràmetres de tipus int que inicialitze les tres variables d'instància.
+ *	Tinga un getter i un setter per a cada atribut.
+ *	Tinga un mètode calcularMitjana() que reba un paràmetre de tipus Alumne i retorne un double.
+
+
+ *  3.- Desenvolupar una classe anomenada Professor que:
+ *	Tinga un mètode posarNotes() que reba un paràmetre de tipus Alumne i que no retorne res. Posarà una qualificació aleatòria a cada una de les assignatures de l'alumne.
+
+
+ *  4.- Desenvolupar una classe anomenada Practica2 per a que en el seu mètode main:
+ *	Es creen i s'inicialitzen tres assignatures.
+ *	Es cree un alumne amb les tres assignatures anteriors.
+ *	Es cree un professor que li pose qualificacions a l'alumne.
+ *	Es mostre per pantalla la mitjana de les notes de l'alumne.
+
+ * NOTA: a més a més dels mètodes anteriors, si necessites altres mètodes o altra informació addicional, afegix-la.
+ * 
+ */
+
+package Practica2;
+
+public class Practica2 {
+	
+	public static void main (String [] args) {
+		
+		// Es creen i s'inicialitzen tres assignatures.
+		
+		
+		
+		Assignatura castella = new Assignatura (2);
+		Assignatura valencia = new Assignatura (8);
+		Assignatura matematiques = new Assignatura (850);
+		
+		//  Es cree un alumne amb les tres assignatures anteriors.
+		
+		Alumne Esteve = new Alumne (2, 8, 850);
+		
+		
+		// Es cree un professor que li pose qualificacions a l'alumne.
+		
+		
+		Professor Juan = mew Professor ();
+		
+		
+	}
+
+	
+}

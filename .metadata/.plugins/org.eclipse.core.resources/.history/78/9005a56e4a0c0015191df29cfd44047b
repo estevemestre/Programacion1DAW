@@ -1,0 +1,6 @@
+package Teatre;
+
+public class Abonado extends Entrada{
+
+	
+}

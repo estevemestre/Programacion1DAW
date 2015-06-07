@@ -1,0 +1,21 @@
+package Examen;
+
+public class Ac1 {
+	static int[] metodo1 (int [] array){
+		int [] copiaOrdenada = new int [array.length];
+		int posicionNueva = 0;
+		for (int i = 0; i < array.length; i++) {
+			if(array[i] %2 != 0){
+				copiaOrdenada[posicionNueva] = array[i];
+				posicionNueva++;
+			}
+		}
+		for (int i = 0; i < array.length; i++) {
+			if(array[i] %2 == 0){
+				copiaOrdenada[posicionNueva] = array[i];
+				posicionNueva++;
+			}
+		}
+		return copiaOrdenada;
+	}
+}

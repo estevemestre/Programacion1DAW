@@ -1,0 +1,55 @@
+/* Cuant diem String fem referencia a una clase i no a un tipo primtiu de datos
+ * String com es una clase te els seus propis metodos per ejemple per a saber la
+ * longitud , en que posicion se encuentra una letra, casos practics per ejemple
+ * cuant tingues que validar un email per a saber si hi a una @ i un punt si nia 
+ * mes de una @ 
+ */	
+
+package Classes;
+
+public class Strings {
+
+	
+	public static void main(String[] args) {
+		
+		metodosString();
+		
+	}
+	
+	
+	
+	public static void metodosString() {
+		
+	
+	String mi_nombre = "Juan";  // mi_nombre es un objeto 
+	String tu_nombre= "Juana";
+	int guardaTotalCaracteres;
+		
+//*********************METODOS*************************************** 
+		 
+	// length() : Devuelve la longitud de una cadena de caracteres
+		 
+	  System.out.println("lenght = numero total caracteres en Juan: "+mi_nombre.length());
+	  guardaTotalCaracteres = mi_nombre.length();
+	// charAt(n): devuelve la posicion de un caracter dentro de una cadena , las posiciones empiezan desde 0
+		 
+	System.out.println("charAt = posicion numero 2 en Juan:  "+mi_nombre.charAt(2));
+			
+	/* substring(x,y): devuelve una subcadena dentro de la cadena, siendo X el caracter
+	* a partir del cual se extrae e Y el nº de caracteres que se  quieren extraer
+	*/
+		 
+	System.out.println("substring = a partir del 1 asta la diferencia de 3 en Juan: "+mi_nombre.substring(1, 3));
+
+	/* equals(cadena) : devuelve true si dos cadenas que se comparan son iguales y 
+	* false si no  lo son. Distingue mayúsculas y minúsculas
+	* equalsIgnoreCase(cadena) ignora les mayúsculas
+	*/ 
+
+	 System.out.println("Compara para ver si juan i Juana son iguales es :"+mi_nombre.equalsIgnoreCase(tu_nombre));
+	 
+
+		}
+
+	}
+

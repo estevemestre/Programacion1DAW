@@ -1,0 +1,9 @@
+package Teatre;
+
+public abstract class Entrada {
+
+	protected int id;
+	protected Zona zona;
+	protected String nombre;
+	
+}

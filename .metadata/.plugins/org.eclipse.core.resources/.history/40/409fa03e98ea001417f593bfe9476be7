@@ -1,0 +1,24 @@
+package Protjecte;
+
+public class Producto {
+
+	private int codBarras=0;
+	private String descripcion;
+	private Double precioSinIva;
+	private double precioConIva;
+	private int candStock;
+	
+	
+	
+	public Producto () {
+		
+	int aux=0;
+	
+	codBarras = aux;
+	aux= this.codBarras + 1;
+		
+	}
+	
+	
+	
+}

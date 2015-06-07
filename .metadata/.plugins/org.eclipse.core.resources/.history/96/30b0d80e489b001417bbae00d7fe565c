@@ -1,0 +1,21 @@
+package actividad1;
+
+public class Actividad6 {
+
+	
+	public static void main(String[] args) {
+		
+		
+		String [] esteve = new String [2];
+		
+		esteve [0] = "cacdaadSCCACS1515";
+		esteve [1] = "afasfacac  axca";
+	}
+		
+		public static String [] tornar (String [] esteve) {
+			
+			
+			
+			
+	}
+}

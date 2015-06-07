@@ -1,0 +1,32 @@
+/*
+ * Metges = tindran nº colegiat, nom
+ */
+package Clinica;
+
+import java.util.Scanner;
+
+public class Metges {
+
+	Scanner teclado = new Scanner(System.in);
+
+	
+	private int numColegiat;
+	private String nom;
+	
+
+	
+	public Metges () {
+		
+		
+		
+		System.out.println("Inserta un número de colegiat per al metge");
+		this.numColegiat = teclado.nextInt();
+		
+		System.out.println("Inserta un nom per al metge ");
+		this.nom =  teclado.nextLine();
+
+	}
+	
+	
+	
+}

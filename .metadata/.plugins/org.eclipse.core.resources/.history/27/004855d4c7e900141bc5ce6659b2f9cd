@@ -1,0 +1,159 @@
+package Prova;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+
+public class Usuari {
+
+   static Scanner reader = new Scanner (System.in);
+	
+	private String login;
+	private String password;
+	private String nom;
+	private String cognoms;
+
+	Usuari () {
+		
+		do {
+			
+			
+		this.login = comprovar();
+	
+		if (this.login != null) {
+			
+	
+			System.out.println("Contrassenya: ");
+			this.password= reader.nextLine();
+		
+			System.out.println("Nom d'usuari: ");
+			this.nom= reader.nextLine();
+		
+			System.out.println("Cognoms ");
+			this.cognoms= reader.nextLine();
+		}else {
+			System.out.println(this.login + "ja existeix , perfavor tonau ha intentar ");
+		}
+		
+		}while (this.login == null);
+		
+	}
+
+	
+	
+	public static String comprovar() {
+		
+		String aux;
+		Connection con = connectarBD();
+		Statement st;
+	
+		System.out.println("Login: ");
+		aux= reader.nextLine();
+		
+		// String sql = "SELECT nom_usuari FROM usuaris WHERE 'nom_usuari = lliurex';";	
+		
+		String sql = "SELECT nom_usuari FROM usuaris WHERE nom_usuari ='"+aux+"';";
+		
+		ResultSet rs; //Per a guardar els resultats de la consulta
+		
+		
+		try {
+			st = con.createStatement();
+			rs = st.executeQuery(sql); 
+			
+			
+			System.out.println("La posicio del cursor esta " + rs.getRow());
+			
+			System.out.println("last " + rs.last());
+			
+			if (rs.last()) {
+				
+				return null;
+				
+			}
+		
+			
+			
+			
+		} catch (SQLException e) {
+			
+			e.printStackTrace(); //Errors que ixen en roig
+		} 
+
+		//st = con.createStatement();
+		//rs = st.executeQuery(sql);
+		
+		return aux;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	protected String getUsuari() {
+		return login;
+	}
+
+	protected void setUsuari(String usuari) {
+		this.login = usuari;
+	}
+
+	protected String getContrassenya() {
+		return password;
+	}
+
+	protected void setContrassenya(String contrasenya) {
+		this.password = contrasenya;
+	}
+
+	protected String getNom() {
+		return nom;
+	}
+
+	protected void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	protected String getCognoms() {
+		return cognoms;
+	}
+
+	protected void setCognoms(String cognoms) {
+		this.cognoms = cognoms;
+	}
+	
+	
+	
+	
+	
+	
+	
+	public static Connection connectarBD(){
+		
+		String url="jdbc:mysql://localhost/programacio"; 	
+		Connection con = null; //Conexió
+		
+		try {
+			Class.forName("com.mysql.jdbc.Driver"); //* Carregem el driver 
+			con = DriverManager.getConnection(url,"root", ""); // L'encarregat d'obrir una nova conexio connexió
+			
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return con;
+		
+	}
+	
+}
